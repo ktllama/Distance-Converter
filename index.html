@@ -19,9 +19,12 @@
 <body>
 <div class="box">
 	<h1>Miles to Kilometers Converter</h1>
-	<p id="directions">Press the "K" key to switch to kilometer converstion, press the "M" key to switch to mile conversion</p>
+	<p id="keyDirections" class="hidden">Press the "K" key to switch to kilometer converstion, press the "M" key to switch to mile conversion</p>
 
-    
+	<div id="btnDirections">
+		<button type="button" id="KtoM">KILOMETERS TO MILES</button>
+		<button type="button" id="MtoK">MILES TO KILOMETERS</button>
+	</div>
     <div class="container top">        
         <form method="post" action="somephpfile.php" id="convert">
         
@@ -33,6 +36,7 @@
     <div class="container bottom" id="answer">
     	<h2 class="invisible">CONVERSION</h2>
     </div>
+
 </div>  
 </body>
 </html>

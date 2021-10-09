@@ -6,17 +6,17 @@
     const intro = document.querySelector('intro');
     const answerDiv = document.getElementById('answer');
     const form = document.getElementById('convert');
+    const btnKtoM = document.getElementById('KtoM');
+    const btnMtoK = document.getElementById('MtoK');
 
-    document.addEventListener('keydown', function(event) {
-    //this changes between converters when you press the K and M key
-        let key = event.code;
-        if (key === 'KeyK'){
+    btnKtoM.addEventListener('click', function() {
             convertType = "kilometers";
             convertHeading.innerHTML = "Kilometers to Miles Converter";
-        } else if (key === 'KeyM'){
-            convertType = "miles";
-            convertHeading.innerHTML = "Miles to Kilometers Converter";
-        }
+    });
+
+    btnMtoK.addEventListener('click', function() {
+        convertType ="miles";
+        convertHeading.innerHTML = "Miles to Kilometers Converter";
     });
 
     form.addEventListener('submit', function(event) {
@@ -39,6 +39,20 @@
             answerDiv.innerHTML = "<h2>PLEASE ENTER A NUMBER.</h2>"
         }
     });
+
+    /* KEY PRESS CHANGE
+    document.addEventListener('keydown', function(event) {
+    //this changes between converters when you press the K and M key
+        let key = event.code;
+        if (key === 'KeyK'){
+            convertType = "kilometers";
+            convertHeading.innerHTML = "Kilometers to Miles Converter";
+        } else if (key === 'KeyM'){
+            convertType = "miles";
+            convertHeading.innerHTML = "Miles to Kilometers Converter";
+        }
+    });
+*/
 
 
 })();
