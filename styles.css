@@ -185,7 +185,7 @@ input[type='button'].button-primary:focus {
   border-color: #1eaedb;
 }
 
-@media only screen and (max-width: 812px) {
+@media only screen and (min-device-width: 375px) and (max-width: 812px) {
   #btnDirections {
     background-color: #aabccc;
     font-size: large;
