@@ -67,13 +67,6 @@ h2 {
   margin: auto;
 }
 
-.button {
-  transition-duration: 0.4s;
-  text-decoration: none;
-  margin: 2%;
-  text-align: center;
-}
-
 .button:hover {
   background-color: #aabccc; /* Green */
   color: white;
@@ -145,6 +138,7 @@ input[type='button'] {
   border: 1px solid #bbb;
   cursor: pointer;
   box-sizing: border-box;
+  margin: auto;
 }
 .button:hover,
 button:hover,
@@ -185,16 +179,18 @@ input[type='button'].button-primary:focus {
   border-color: #1eaedb;
 }
 
-@media only screen and (min-device-width: 375px) and (max-width: 812px) {
+@media only screen and (max-width: 900px) {
   #btnDirections {
     background-color: #aabccc;
     font-size: large;
+    margin: 10px;
   }
 
   .button {
     width: 90%;
     display: block;
-    font-size: 2em;
+    font-size: 1.5em;
     color: #555;
+    margin: 10px;
   }
 }
