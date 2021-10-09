@@ -67,6 +67,18 @@ h2 {
   margin: auto;
 }
 
+.button {
+  transition-duration: 0.4s;
+  text-decoration: none;
+  margin: 2%;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #aabccc; /* Green */
+  color: white;
+}
+
 .hidden {
   display: none;
 }
@@ -147,6 +159,7 @@ input[type='button']:focus {
   color: #333;
   border-color: #888;
   outline: 0;
+  background-color: #aabccc;
 }
 .button.button-primary,
 button.button-primary,
@@ -170,4 +183,18 @@ input[type='button'].button-primary:focus {
   color: #fff;
   background-color: #1eaedb;
   border-color: #1eaedb;
+}
+
+@media only screen and (max-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  #btnDirections {
+    background-color: #aabccc;
+    font-size: large;
+  }
+
+  .button {
+    width: 90%;
+    display: block;
+    font-size: 2em;
+    color: #555;
+  }
 }
