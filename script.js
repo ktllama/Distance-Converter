@@ -3,7 +3,7 @@
 
     let convertType = "miles";
     const convertHeading = document.querySelector('h1');
-    const intro = document.querySelector('p');
+    const intro = document.querySelector('intro');
     const answerDiv = document.getElementById('answer');
     const form = document.getElementById('convert');
 
@@ -13,11 +13,9 @@
         if (key === 'KeyK'){
             convertType = "kilometers";
             convertHeading.innerHTML = "Kilometers to Miles Converter";
-            intro.innerHTML = "Type in a number of kilometers and click the button to convert the distance to miles.";
         } else if (key === 'KeyM'){
             convertType = "miles";
             convertHeading.innerHTML = "Miles to Kilometers Converter";
-            intro.innerHTML = "Type in a number of miles and click the button to convert the distance to kilometers.";
         }
     });
 
@@ -38,7 +36,7 @@
 
             }
         } else {
-            answerDiv.innerHTML = "<h2>Please provide a number.</h2>"
+            answerDiv.innerHTML = "<h2>PLEASE ENTER A NUMBER.</h2>"
         }
     });
 

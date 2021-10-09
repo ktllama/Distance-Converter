@@ -17,24 +17,22 @@
 </head>
 
 <body>
-
+<div class="box">
 	<h1>Miles to Kilometers Converter</h1>
+	<p id="directions">Press the "K" key to switch to kilometer converstion, press the "M" key to switch to mile conversion</p>
+
     
-    <div class="container top">
-    	<p>Type in a number of miles and click the button to convert the distance to kilometers.</p>
-        
+    <div class="container top">        
         <form method="post" action="somephpfile.php" id="convert">
         
         	<input type="text" name="distance" id="distance" placeholder="distance">
-            <input type="submit" name="convertdist" value="Convert Distance">
+            <input type="submit" name="convertdist" value="CLICK to Convert Distance">
         
         </form>
     </div>
     <div class="container bottom" id="answer">
-    	<h2 class="invisible">Answer goes here</h2>
+    	<h2 class="invisible">CONVERSION</h2>
     </div>
-    
-    <p id="directions">Press the "K" key to switch to kilometer converstion, press the "M" key to switch to mile conversion</p>
-
+</div>  
 </body>
 </html>
