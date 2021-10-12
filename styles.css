@@ -66,6 +66,9 @@ h2 {
   text-align: center;
   margin: auto;
 }
+#MtoK {
+  float: right;
+}
 
 .button:hover {
   background-color: #aabccc; /* Green */
