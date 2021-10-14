@@ -60,21 +60,6 @@ h2 {
   background: #aabccc;
 }
 
-#btnDirections {
-  padding: 4px;
-  text-transform: capitalize;
-  text-align: center;
-  margin: auto;
-}
-#MtoK {
-  float: right;
-}
-
-.button:hover {
-  background-color: #aabccc; /* Green */
-  color: white;
-}
-
 .hidden {
   display: none;
 }
@@ -141,7 +126,9 @@ input[type='button'] {
   border: 1px solid #bbb;
   cursor: pointer;
   box-sizing: border-box;
-  margin: auto;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .button:hover,
 button:hover,
@@ -183,10 +170,15 @@ input[type='button'].button-primary:focus {
 }
 
 @media only screen and (max-width: 900px) {
-  #btnDirections {
+  #btnDirections .button {
+    display: block;
+    font-size: 1.5em;
     background-color: #aabccc;
+    color: #555;
     font-size: large;
-    margin: 10px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .button {
@@ -194,6 +186,8 @@ input[type='button'].button-primary:focus {
     display: block;
     font-size: 1.5em;
     color: #555;
-    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
   }
 }
